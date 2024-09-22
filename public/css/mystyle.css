@@ -28,3 +28,27 @@
     display: flex;
     justify-content: center;
   }
+
+  .wrapper-img-banner {
+    max-width: 100%;
+    max-height: auto;
+    overflow: hidden;
+  }
+
+  .btn-primary {
+    background: #22aba6 !important;
+    border: 0 !important;
+  }
+
+  .carousel-caption {
+    bottom: auto;
+    top: 14%;
+  }
+
+  .menu-active {
+    color: #22aba6 !important;
+  }
+
+  .bg-body-tertiary {
+    background: #dadada;
+  }

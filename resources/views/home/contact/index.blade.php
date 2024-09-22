@@ -1,7 +1,7 @@
 <div class="container">
 
     <div class="text-center my-5">
-        <h4 class="">Kontak Kami</h4>
+        <h1 class="">Kontak Kami</h1>
         <p>Berikan Saran dan Masukan Untuk Kami</p>
     </div>
 
@@ -27,7 +27,7 @@
                             <textarea name="desc" cols="30" rows="10" class="form-control" placeholder="Masukan pesan anda" required></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-success mt-3">Kirim</button>
+                        <button type="submit" class="btn btn-primary mt-3">Kirim</button>
                     </form>
                 </div>
             </div>
@@ -35,18 +35,18 @@
 
         <div class="col-md-6">
             <div class="d-flex">
-                <i class="fas fa-phone fa-2x px-3"></i>
-                <h3>(0262) 2248250</h3>
+                <i class="fas fa-phone fa-1x px-3"></i>
+                <p>(0262) 2248250</p>
             </div>
 
-            <div class="d-flex mt-3">
-                <i class="fas fa-envelope fa-2x px-3"></i>
-                <h3>pdamgarut@tirtaintan.co.id</h3>
+            <div class="d-flex mt-2">
+                <i class="fas fa-envelope fa-1x px-3"></i>
+                <p>pdamgarut@tirtaintan.co.id</p>
             </div>
 
-            <div class="d-flex mt-3">
-                <i class="fas fa-map-marker fa-2x px-3"></i>
-                <h3>Jalan Cipanas Ruko Graha Praja Indah No.9A, Langensari, Kec. Tarogong Kaler, Kabupaten Garut, Jawa Barat</h3>
+            <div class="d-flex mt-2">
+                <i class="fas fa-map-marker fa-1x px-3"></i>
+                <p>Jalan Cipanas Ruko Graha Praja Indah No.9A, Langensari, Kec. Tarogong Kaler, Kabupaten Garut, Jawa Barat</p>
             </div>
         </div>
     </div>
