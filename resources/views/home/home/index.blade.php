@@ -6,11 +6,6 @@
   <title>Carousel Page</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    .wrapper-img-banner {
-      max-width: 100%;
-      max-height: 400px;
-      overflow: hidden;
-    }
     .img-banner {
       width: 100%;
       object-fit: cover;
@@ -26,9 +21,8 @@
           <img src="/img/banner.jpg" class="img-banner" alt="Banner Image">
           <div class="container">
             <div class="carousel-caption text-start">
-              <h1>Example headline.</h1>
-              <p>Some representative placeholder content for the first slide of the carousel.</p>
-              <p><a class="btn btn-lg btn-primary" href="/login/">Sign up today</a></p>
+              <h1 class="dark" style="color: #333;">Selamat datang di Website PDAM</h1>
+              <p style="color: #777;">Pengelola sistem air bersih dilaksanakan oleh Seksi Air Minum yang berada dibawah<br>Dinas Pekerjaan Umum Kabupaten Daerah Tingkat II Kabupaten Garut.</p>
             </div>
           </div>
         </div>
@@ -44,13 +38,34 @@
     </button>
   </div>
 
+  <div class="container px-4 py-5" id="featured-3">
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+      
+        <h4>Pelayanan Yang Memuaskan</h4>
+        <p>Meningkatkan kepuasan pelanggan dan memperluas jangkauan layanan PDAM​</p>
+        <a class="btn btn-primary btn-small" href="#">Selengkapnya</a>
+      </div>
+      <div class="feature col">
+        <h4>Karyawan Berdaya Sejahtera</h4>
+        <p>konsep yang berfokus pada kesejahteraan karyawan dalam berbagai aspek, termasuk fisik, mental, emosional, dan profesional.</p>
+        <a class="btn btn-primary btn-small" href="#">Selengkapnya</a>
+      </div>
+      <div class="feature col">
+        <h4 class="">Kontribusi PAD Kab.Garut</h4>
+        <p>Optimalisasi sektor lain seperti pajak daerah dan retribusi, yang menjadi fokus pemerintah Garut untuk memperkuat keuangan daerah selama beberapa tahun terakhir</p>
+        <a class="btn btn-primary btn-small" href="#">Selengkapnya</a>
+      </div>
+    </div>
+  </div>
+
   <!-- About Section -->
   <div class="container mt-5">
     <div class="text-center">
-      <h4>Tentang Kami</h4>
+      <h2>Tentang Kami</h2>
       <p>Anda Tahu Kami? Kami Akan Beri Tahu Anda</p>
     </div>
-    <div class="row">
+    <div class="row g-4 py-5">
       <div class="col-md-6">
         @if ($about)
           <img src="{{ $about->cover }}" class="img-fluid" alt="About Image">
@@ -67,10 +82,10 @@
   <!-- Services Section -->
   <div class="container my-4">
     <div class="text-center">
-      <h4>Services</h4>
+      <h2>Services</h2>
       <p>Apa yang kami lakukan? Kami Akan Beri Tahu Anda</p>
     </div>
-    <div class="row">
+    <div class="row g-4 py-5">
       @foreach ($services as $item)
         <div class="col-md-3 my-3">
           <div class="text-center">
@@ -81,43 +96,40 @@
         </div>
       @endforeach
     </div>
-    <div class="text-center mt-3">
-      <a href="" class="btn btn-success px-5">selengkapnya <i class="fas fa-arrow-right"></i></a>
-    </div>
   </div>
 
   <!-- Blog Section -->
   <div class="container my-2">
     <div class="text-center">
-      <h4>Blog</h4>
+      <h2>Blog</h2>
       <p>Apa Saja Kabar Hari Ini? Kami Akan Beri Tahu Anda</p>
     </div>
-    <div class="row">
-      @foreach($blog as $item)
-        <div class="col-md-3">
-          <div class="card shadow-sm">
-            <img src="/{{ $item->cover }}" class="img-card-blog" alt="">
-          </div>
-          <div class="p-1">
-            <a href="" class="text-decoration-none"><h5>{{ $item->title }}</h5></a>
-            <p>
-              {!! Illuminate\Support\Str::limit($item->body, 100) !!}
-            </p>
-            <a href="/blog/show/{{ $item->id }}">Selengkapnya&RightArrow;</a>
-          </div>
+    <div class="row g-4 py-5">
+    @foreach($blog as $item)
+      <div class="col-md-3">
+    
+       <div class="card shadow-sm" style="width: 18rem;">
+          <img src="/{{ $item->cover }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ $item->title }}</h5>
+              <p class="card-text">{!! Illuminate\Support\Str::limit($item->body, 100) !!}</p>
+              <a href="/blog/show/{{ $item->id }}" class="btn btn-primary">Selengkapnya</a>
+            </div>
         </div>
-      @endforeach
-    </div>
-    <div class="text-center mt-3">
-      <a href="" class="btn btn-success px-5">selengkapnya <i class="fas fa-arrow-right"></i></a>
+      
+      </div>
+      @endforeach  
     </div>
   </div>
 
-  <div class="container my-2 mb-5">
+  <div class="container my-5 mb-5">
+    <div class="row g-4 py-5 text-center">
+      
     <div class="text-center">
       <h4>Hubungi Kami</h4>
       <p>Anda dapat bertanya langsung ke kami</p>
-      <a href="" class="btn btn-success px-5" target="blank"><i class="fas fa-phone"></i>Hubungi Kami di Whatsapp</a>
+      <a href="" class="btn btn-primary px-5" target="blank"><i class="fas fa-phone"></i> Hubungi Kami di Whatsapp</a>
+    </div>
     </div>
   </div>
 

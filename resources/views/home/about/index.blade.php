@@ -1,7 +1,7 @@
-<div class="wrapper">
-    <img src="/img/banner.jpg" class="img-hero" width="100%" alt="">
-    <div class="text-hero">
-        <h4><b>Tentang kami</b></h4>
+<div class="wrapper my-5">
+    <div class="text-center">
+        <h1 class="text-center">About</h1>
+        <p>Apa Saja Kabar Hari Ini? Kami Akan Beri Tahu Anda</p>
     </div>
 </div>
 

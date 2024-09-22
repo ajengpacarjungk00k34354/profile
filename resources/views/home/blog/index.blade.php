@@ -1,27 +1,26 @@
 <div class="container my-5">
     <div class="text-center">
-        <h4 class="text-center">Blog</h4>
+        <h1 class="text-center">Blog</h1>
         <p>Apa Saja Kabar Hari Ini? Kami Akan Beri Tahu Anda</p>
     </div>
 
-    <div class="row">
-        @foreach($blog as $item)
-            <div class="col-md-3 my-3">
-                <div class="card shadow-sm">
-                    <div class="wrapper-card-blog"></div>
-                    <img src="/{{ $item->cover }}" class="img-card-blog" alt="">
-                </div>
-                <div class="p-1">
-                    <a href="/blog/show/{{ $item->id }}"><h5>{{ $item->title }}</h5></a> <!-- Gunakan $item -->
-                    {!! Illuminate\Support\Str::limit($item->body, 100) !!}
-                    <a href="">Selengkapnya &RightArrow;</a>
-                </div>
+    <div class="row g-4 py-5">
+    @foreach($blog as $item)
+      <div class="col-md-3">
+    
+       <div class="card shadow-sm" style="width: 18rem;">
+          <img src="/{{ $item->cover }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ $item->title }}</h5>
+              <p class="card-text">{!! Illuminate\Support\Str::limit($item->body, 100) !!}</p>
+              <a href="/blog/show/{{ $item->id }}" class="btn btn-primary">Selengkapnya</a>
             </div>
-        @endforeach
-
-        <div class="text-center mt-3">
-            <a href="" class="btn btn-success px-5">selengkapnya <i class="fas fa-arrow-right"></i></a>
         </div>
+      
+      </div>
+      @endforeach  
+
+        
     </div>
 
     <div class="bg-light my-5">

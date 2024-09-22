@@ -8,7 +8,9 @@
   <!-- Fixed navbar -->
   <nav class="navbar navbar-expand-md navbar-light bg-light shadow">
     <div class="container">
-      <a class="navbar-brand" href="">PDAM TARKAL</a>
+      <a class="navbar-brand" href="">
+        <img src="{{ asset('img/logo.png') }}" alt="logo">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -33,7 +35,7 @@
         </ul>
         <form class="d-flex ms-auto">
             @auth
-            <a href="/admin/dashboard" class="btn btn-primary"><i class="fas fa-user"></i>Dashboard</a>
+            <a href="/admin/dashboard" class="btn btn-primary">Masuk</a>
             @else
             <a href="/login" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i>Login</a>
             @endauth
