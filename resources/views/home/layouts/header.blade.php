@@ -37,7 +37,7 @@
             @auth
             <a href="/admin/dashboard" class="btn btn-primary">Masuk</a>
             @else
-            <a href="/login" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i>Login</a>
+            <a href="/login" class="btn btn-primary">Masuk</a>
             @endauth
         </form>
       </div>
