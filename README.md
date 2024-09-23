@@ -27,9 +27,11 @@ Website company profil yang di develop untuk test case UJIKOM
     -   Password : 1234
  
 ## ERD & Relasi antar tabel
+![profile uml](https://github.com/user-attachments/assets/9f79c93a-a8a8-4747-99cc-c6546adde4b0)
 
 
 ## UML Diagram Use Case
+![use case](https://github.com/user-attachments/assets/1fb103cf-1d3e-49da-9ae6-940629351d17)
 
 
 ## Teknologi Yang Digunakan
